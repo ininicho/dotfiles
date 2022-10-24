@@ -1,0 +1,13 @@
+osascript -e 'quit app "Discord"'
+osascript -e 'quit app "Docker"'
+osascript -e 'quit app "GoodNotes"'
+osascript -e 'quit app "Google Chrome"'
+osascript -e 'quit app "Microsoft Excel"'
+osascript -e 'quit app "Microsoft Teams"'
+osascript -e 'quit app "Microsoft Word"'
+osascript -e 'quit app "Postman"'
+osascript -e 'quit app "RStudio"'
+osascript -e 'quit app "Steam"'
+osascript -e 'quit app "Visual Studio Code"'
+osascript -e 'quit app "Webex"'
+
