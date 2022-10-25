@@ -11,6 +11,7 @@ local servers = {
   "gopls",
   "svelte",
   "tailwindcss",
+  "texlab",
 }
 
 local settings = {

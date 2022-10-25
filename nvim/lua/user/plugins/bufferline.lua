@@ -19,13 +19,6 @@ require('bufferline').setup({
     close_icon = "",
     left_trunc_marker = "",
     right_trunc_marker = "",
-    custom_areas = {
-      left = function()
-        return {
-          { text = '    ', fg = '#8fff6d' },
-        }
-      end,
-    },
   },
   highlights = {
     fill = {
