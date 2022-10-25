@@ -135,30 +135,10 @@ local c = {
 		left_sep = "block",
 		right_sep = "block",
 	},
-	file_encoding = {
-		provider = "file_encoding",
-		hl = {
-			fg = "orange",
-			bg = "darkblue",
-			style = "italic",
-		},
-		left_sep = "block",
-		right_sep = "block",
-	},
 	position = {
 		provider = "position",
 		hl = {
 			fg = "green",
-			bg = "darkblue",
-			style = "bold",
-		},
-		left_sep = "block",
-		right_sep = "block",
-	},
-	line_percentage = {
-		provider = "line_percentage",
-		hl = {
-			fg = "aqua",
 			bg = "darkblue",
 			style = "bold",
 		},
@@ -193,9 +173,7 @@ local middle = {
 local right = {
 	c.lsp_client_names,
 	c.file_type,
-	c.file_encoding,
 	c.position,
-	c.line_percentage,
 	c.scroll_bar,
 }
 
