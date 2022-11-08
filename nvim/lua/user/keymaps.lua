@@ -15,6 +15,9 @@ vim.keymap.set("n", "<S-h>", ":bprevious<CR>")
 vim.keymap.set("v", "<", "<gv")
 vim.keymap.set("v", ">", ">gv")
 
+-- Escape Insert mode
+vim.keymap.set("i", "jj", "<Esc>")
+
 -- Bbye
 vim.keymap.set('n', '<leader>q', ':Bdelete<CR>')
 

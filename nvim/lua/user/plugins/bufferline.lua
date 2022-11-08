@@ -71,5 +71,7 @@ require('bufferline').setup({
       fg = { attribute = 'bg', highlight = 'StatusLine' },
       bg = { attribute = 'bg', highlight = 'StatusLine' },
     },
+    pick = { italic = false },
+    buffer_selected = { italic = false },
   },
 })

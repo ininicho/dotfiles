@@ -35,5 +35,7 @@ vim.opt.redrawtime = 10000 -- Allow more time for loading syntax on large files
 -- [[ Theme ]]
 vim.opt.syntax = "ON"
 vim.opt.termguicolors = true
-vim.cmd [[colorscheme dracula]]
+vim.opt.colorcolumn = '120'
+-- vim.cmd [[colorscheme dracula]]
+vim.cmd [[ colorscheme tokyonight ]]
 

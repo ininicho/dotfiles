@@ -14,7 +14,13 @@ local packer_bootstrap = ensure_packer()
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
-  use {'Mofiqul/dracula.nvim'}
+  -- use {'Mofiqul/dracula.nvim'}
+  use {
+    'folke/tokyonight.nvim',
+    config = function ()
+      require('user.plugins.tokyonight')
+    end,
+  }
 
   use {
     'kyazdani42/nvim-tree.lua',
@@ -46,7 +52,17 @@ return require('packer').startup(function(use)
   }
 
   use {
+    'L3MON4D3/LuaSnip',
+    config = function()
+      require('user.plugins.luasnip')
+    end,
+  }
+
+  use {
     'lervag/vimtex',
+    requires = {
+      'L3MON4D3/LuaSnip',
+    },
     config = function()
       require('user.plugins.vimtex')
     end,
@@ -104,6 +120,22 @@ return require('packer').startup(function(use)
   }
 
   use {'moll/vim-bbye'}
+
+  -- use {
+  --   'folke/persistence',
+  --   event = 'BufReadPre',
+  --   module = 'persistence',
+  --   config = function()
+  --     require('user.plugins.persistence')
+  --   end,
+  -- }
+
+  use {
+    'folke/which-key.nvim',
+    config = function()
+      require('user.plugins.which-key')
+    end,
+  }
 
   if packer_bootstrap then
     require('packer').sync()
