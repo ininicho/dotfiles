@@ -1,2 +1,10 @@
-require('which-key').setup {}
+local wk = require('which-key')
+
+wk.setup {}
+
+wk.register({
+  ['<leader>l'] = {
+    name = "+l",
+  }
+})
 

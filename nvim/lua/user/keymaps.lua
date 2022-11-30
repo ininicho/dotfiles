@@ -19,5 +19,5 @@ vim.keymap.set("v", ">", ">gv")
 vim.keymap.set("i", "jj", "<Esc>")
 
 -- Bbye
-vim.keymap.set('n', '<leader>q', ':Bdelete<CR>')
+vim.keymap.set('n', '<leader>q', ':Bdelete<CR>', { desc = 'Close Buffer' })
 

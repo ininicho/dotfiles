@@ -12,6 +12,7 @@ local servers = {
   "svelte",
   "tailwindcss",
   "texlab",
+  "jdtls",
 }
 
 local settings = {

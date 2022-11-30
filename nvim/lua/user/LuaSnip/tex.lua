@@ -35,7 +35,7 @@ return {
   --     }
   --   )
   -- ),
-  s({trig='snd', dscr='Start a new document'},
+  s({trig='newd', dscr='Start a new document'},
     fmta(
       [[
         \documentclass[12pt]{article}
