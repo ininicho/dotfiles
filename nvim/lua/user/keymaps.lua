@@ -35,3 +35,6 @@ vim.keymap.set('n', '<leader>pc', ':PackerCompile<CR>')
 vim.keymap.set('n', '<leader>ps', ':PackerSync<CR>')
 vim.keymap.set('n', '<leader>pu', ':PackerUpdate<CR>')
 
+-- Paste
+vim.keymap.set('v', '<leader>p', '"_dP', { noremap = true })
+

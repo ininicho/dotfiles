@@ -1,7 +1,8 @@
 local s = require('startup')
 
 vim.g.startup_bookmarks = {
-  ["A"] = '~/.config/nvim/lua/user/plugins.lua'
+  ["A"] = '~/.config/nvim/lua/user/',
+  ["S"] = '~/Documents/projects/svelte-blog/',
 }
 
 local user_bookmarks = vim.g.startup_bookmarks
