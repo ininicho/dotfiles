@@ -11,6 +11,8 @@ plugins=(
   tmux
   z
   vi-mode
+  zsh-autosuggestions
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -19,16 +21,25 @@ source $ZSH/oh-my-zsh.sh
 # Configuration
 # -------------------------------
 
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Starship
 # eval "$(starship init zsh)"
+
+# fnm
+eval "$(fnm env --use-on-cd)"
+
+# exa
+export EXA_COLORS="da=1;35"
 
 # -------------------------------
 # Aliases
 # -------------------------------
 
 alias vim="nvim"
+
+# exa
 alias ll="exa -lh"
 alias la="exa -lah"
 
@@ -46,6 +57,13 @@ alias gs="git s"
 alias nah="git reset --hard;git clean -df"
 alias co="git checkout"
 alias main='git checkout $([ `git rev-parse --quiet --verify master` ] && echo "master" || echo "main")'
+
+# Tmux
+sn=nic
+alias tmuxn="~/.config/scripts/tmux-new.sh $sn"
+alias tmuxa="tmux new-session -A -t $sn"
+alias tmuxx="tmux kill-session -t $sn"
+alias tmuxl="tmux list-sessions"
 
 # -------------------------------
 # Miscellaneous
