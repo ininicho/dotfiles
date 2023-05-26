@@ -1,20 +1,20 @@
 Host csclub
   HostName corn-syrup.csclub.uwaterloo.ca
   User nsuprapt
-  IdentityFile ~/.ssh/id_rsa-csc
+  IdentityFile ~/.config/ssh/id_rsa-csc
 
 Host uwaterloo
   HostName linux.student.cs.uwaterloo.ca
   User nsuprapt
-  IdentityFile ~/.ssh/id_rsa-student
+  IdentityFile ~/.config/ssh/id_rsa-student
 
 Host cs348
   HostName ubuntu2004-002.student.cs.uwaterloo.ca
   User nsuprapt
-  IdentityFile ~/.ssh/id_rsa-csdb
+  IdentityFile ~/.config/ssh/id_rsa-csdb
 
 Host ec2-server
   HostName ec2-18-218-174-186.us-east-2.compute.amazonaws.com
   User ec2-user
-  IdentityFile ~/.ssh/test1.pem
+  IdentityFile ~/.config/ssh/test1.pem
 
