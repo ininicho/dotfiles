@@ -1,5 +1,6 @@
 *
 /*
+!/.ssh/*
 !/nvim/
 !/scripts/
 !/tmux/
