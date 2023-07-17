@@ -40,6 +40,4 @@ vim.keymap.set('v', '<leader>p', '"_dP', { noremap = true })
 
 -- Man
 vim.keymap.set('n', '<leader>mm', ':vertical Man ')
--- TODO: set pydoc
--- vim.keymap.set('n', '<leader>mp', ':Man ')
 

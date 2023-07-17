@@ -1,6 +1,5 @@
 vim.cmd [[syntax enable]]
-vim.cmd [[let g:vimtex_view_method = 'sioyek']]
-vimtex_view_method = 'sioyek'
+vim.g.vimtex_view_method = 'sioyek'
 -- vimtex_compiler_method = 'pdflatex'
 
 
