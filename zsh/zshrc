@@ -60,9 +60,12 @@ alias main='git checkout $([ `git rev-parse --quiet --verify master` ] && echo "
 
 # Tmux
 sn=nic
-alias tmuxn="~/.config/scripts/tmux-new.sh $sn"
-alias tmuxa="tmux new-session -A -t $sn"
-alias tmuxx="tmux kill-session -t $sn"
+alias tmuxn="~/.config/scripts/tmux-new.sh"
+alias tmuxnn="tmuxn $sn"
+alias tmuxa="tmux new-session -A -t"
+alias tmuxan="tmuxa $sn"
+alias tmuxx="tmux kill-session -t"
+alias tmuxxn="tmuxx $sn"
 alias tmuxl="tmux list-sessions"
 
 # -------------------------------
