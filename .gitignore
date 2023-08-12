@@ -1,7 +1,8 @@
 *
-!/ssh/
-!/nvim/
-!/scripts/
-!/tmux/
-!/zsh/
+!*/
+!/ssh/**
+!/scripts/**
+!/nvim/**
+!/tmux/**
+!/zsh/**
 
