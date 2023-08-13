@@ -60,7 +60,7 @@ alias main='git checkout $([ `git rev-parse --quiet --verify master` ] && echo "
 
 # Tmux
 sn=nic
-alias tmuxn="~/.config/scripts/tmux-new.sh $sn"
+alias tmuxn="tmuxnew $sn"
 alias tmuxa="tmux new-session -A -t $sn"
 alias tmuxx="tmux kill-session -t $sn"
 alias tmuxl="tmux list-sessions"
@@ -99,4 +99,5 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 export DBUS_SESSION_BUS_ADDRESS='unix:path='$DBUS_LAUNCHD_SESSION_BUS_SOCKET
 export ZETTEL_ROOT="$HOME/zettel"
+export PATH="$PATH:$HOME/.config/scripts"
 
