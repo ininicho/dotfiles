@@ -1,0 +1,40 @@
+#!/bin/bash
+# A bash script that helps me create notes in my second brain
+# https://github.com/mischavandenburg/dotfiles/blob/main/scripts/zet
+
+# function to create and open a file in the specified directory
+open_file() {
+
+	# Cd into the directory
+	cd "$1" || exit
+	# Create the file in the specified directory
+	touch "$1/$filename.md"
+
+	# create unique identifier and links section
+	timestamp="$(date +"%Y%m%d%H%m")"
+
+	# format the file
+	{
+		echo "# $timestamp"
+	} >>"$1/$filename.md"
+
+	# format index file
+	{
+		echo "$filename [[$timestamp]]"
+	} >>"$1/0-index.md"
+
+	# Open the file in Neovim
+	nvim "$1/$filename.md" "$1/0-index.md"
+}
+
+# if more than one argument is given, print error message and stop script
+if [[ $# -ne 1 ]]; then
+	echo "Please provide only one filename separated by dashes, without .md extension."
+	echo "Example: zet my-new-note"
+	exit 1
+fi
+
+# set filename to the argument given to the script
+filename=$1
+
+open_file "$ZETTEL_ROOT"
