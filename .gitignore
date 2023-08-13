@@ -1,14 +1,4 @@
 *
-<<<<<<< Updated upstream
-/*
-!/ssh/*
-!/nvim/
-!/scripts/
-!/tmux/
-!/zsh/
-!/scripts/tmux-new.sh
-
-=======
 !*/
 !/ssh/**
 !/scripts/**
@@ -16,4 +6,3 @@
 !/tmux/**
 !/zsh/**
 !/marksman/**
->>>>>>> Stashed changes
