@@ -1,9 +1,7 @@
 *
-/*
-!/ssh/*
-!/nvim/
-!/scripts/
-!/tmux/
-!/zsh/
-!/scripts/tmux-new.sh
-
+!*/
+!/ssh/**
+!/scripts/**
+!/nvim/**
+!/tmux/**
+!/zsh/**
