@@ -1,0 +1,12 @@
+#!/bin/bash
+# script for deleting tmux session
+
+if [ -z "$1" ]; then
+	echo "No session name supplied"
+	exit
+fi
+sn="$1"
+
+# Attach the session and window 0
+tmux kill-session -t "$sn" || exit 1
+echo "killed session $sn"
