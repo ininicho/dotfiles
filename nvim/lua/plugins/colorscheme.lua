@@ -12,7 +12,7 @@ return {
       --   primary = "#89A7B1",
       --   secondary = "#566981",
       -- },
-      preset = "slate",
+      preset = "miami-nights",
     },
   },
   {
