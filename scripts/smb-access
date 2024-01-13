@@ -1,0 +1,4 @@
+#!/bin/bash
+# script for starting cloudflared
+
+cloudflared access tcp --hostname smb.ininicho.com --url localhost:8445
