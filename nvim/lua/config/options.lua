@@ -5,3 +5,6 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 vim.opt.termguicolors = true
+
+-- Automatically format on save
+vim.g.autoformat = true
