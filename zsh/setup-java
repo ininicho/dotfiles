@@ -1,0 +1,7 @@
+#!/bin/bash
+# script for setting up environment variables for Java development
+
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+# Update PATH
+export PATH="/Users/nic/.local/bin/apache-maven-3.9.6/bin:$PATH"
+export PATH="/Users/nic/.local/bin/scala-2.11.8/bin:$PATH"

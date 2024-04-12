@@ -9,7 +9,6 @@ HYPHEN_INSENSITIVE="true"
 plugins=(
   git
   tmux
-  z
   vi-mode
   zsh-autosuggestions
   zsh-syntax-highlighting
@@ -93,4 +92,6 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 export DBUS_SESSION_BUS_ADDRESS='unix:path='$DBUS_LAUNCHD_SESSION_BUS_SOCKET
 export ZETTEL_ROOT="$HOME/zettel"
 export PATH="$PATH:$HOME/.config/scripts"
+
+eval "$(zoxide init --cmd cd zsh)"
 

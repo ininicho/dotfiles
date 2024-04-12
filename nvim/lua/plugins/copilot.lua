@@ -17,6 +17,9 @@ return {
           auto_trigger = true,
           accept = false, -- disable built-in keymapping
         },
+        filetypes = {
+          markdown = true,
+        },
       })
 
       -- hide copilot suggestions when cmp menu is open
@@ -32,6 +35,22 @@ return {
         end)
       end
     end,
+    keys = {
+      {
+        "<leader>gf",
+        function()
+          vim.cmd([[Copilot disable]])
+        end,
+        desc = "Disable Copilot",
+      },
+      {
+        "<leader>go",
+        function()
+          vim.cmd([[Copilot enable]])
+        end,
+        desc = "Enable Copilot",
+      },
+    },
   },
 
   -- copilot status in lualine
