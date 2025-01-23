@@ -39,8 +39,8 @@ export EXA_COLORS="da=1;35"
 alias vim="nvim"
 
 # exa
-alias ll="exa -lh"
-alias la="exa -lah"
+alias ll="eza -lh"
+alias la="eza -lah"
 
 # Locations
 alias cdd="cd ~/Documents/"
