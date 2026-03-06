@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo route -n delete 163.66.93.14/32
