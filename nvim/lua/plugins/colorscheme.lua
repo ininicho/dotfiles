@@ -1,10 +1,18 @@
 return {
-  -- { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
   {
-    "nyoom-engineering/oxocarbon.nvim",
-    -- priority = 1000,
-    build = false,
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
+    opts = {
+      flavour = "mocha", -- Options: latte, frappe, macchiato, mocha
+      transparent_background = false, -- Set to true if you want transparency
+    },
   },
+  -- {
+  --   "nyoom-engineering/oxocarbon.nvim",
+  --   -- priority = 1000,
+  --   build = false,
+  -- },
   -- {
   --   "jesseleite/nvim-noirbuddy",
   --   lazy = false,
@@ -24,7 +32,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "oxocarbon",
+      colorscheme = "catppuccin",
     },
   },
 }

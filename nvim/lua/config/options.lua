@@ -5,7 +5,7 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 vim.opt.termguicolors = true
--- vim.cmd.colorscheme = "catppuccin-nvim"
+--vim.cmd.colorscheme = "catppuccin-nvim"
 
 -- Automatically format on save
 vim.g.autoformat = true
