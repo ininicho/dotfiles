@@ -91,7 +91,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 export DBUS_SESSION_BUS_ADDRESS='unix:path='$DBUS_LAUNCHD_SESSION_BUS_SOCKET
 export ZETTEL_ROOT="$HOME/zettel"
-export PATH="$PATH:$HOME/.config/scripts"
+export PATH="$PATH:$HOME/.config/scripts:$HOME/dev/project/ininicho/scripts"
 
 eval "$(zoxide init --cmd cd zsh)"
 
