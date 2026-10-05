@@ -1,0 +1,11 @@
+key=$1
+echo "test" >test.txt
+openssl pkeyutl -encrypt -pubin -inkey "${key}.pub" -in test.txt -out test.txt.enc
+openssl pkeyutl -decrypt -inkey "${key}.priv" -in test.txt.enc -out test.txt.dec
+if cmp -s test.txt test.txt.dec; then
+  echo "[INFO] Valid key pair"
+else
+  echo "[ERROR] Invalid key pair"
+fi
+
+rm test.txt test.txt.enc test.txt.dec
